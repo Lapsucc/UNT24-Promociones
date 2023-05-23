@@ -11,9 +11,9 @@ public class Managernivel : MonoBehaviour
     public Sprite[] etiquetas;
     public string[] colores;
     public string color;
-    public TextMeshProUGUI texto,texto2,texto3;
-    public Image imagen,imagen2;
-    public Color []col;
+    public TextMeshProUGUI texto, texto2, texto3;
+    public Image imagen, imagen2;
+    public Color[] col;
     public float tiempo_1;
     public int puntosbuenos, puntosmalos;
     public bool incioJ;
@@ -30,7 +30,7 @@ public class Managernivel : MonoBehaviour
     private void Awake()
     {
 
-         A = Random.Range(0, colores.Length);
+        A = Random.Range(0, colores.Length);
         col1 = Random.Range(0, etiquetas.Length);
         nomEtiqueta = ArrayEtiquetas[col1];
         imagen.sprite = etiquetas[col1];
@@ -41,43 +41,40 @@ public class Managernivel : MonoBehaviour
         texto2.text = valor.ToString();
         imagen2.color = col[A];
         texto3.text = valor.ToString();
-        
+
         texto3.text = "$" + valor.ToString() + ".000";
         texto2.text = "$" + valor.ToString() + ".000";
-        texto.text = "Busca los productos que tengan un precio de " + "$" + valor.ToString() + ".000" + " ,una etiqueta de color " + color + " y una forma " + nomEtiqueta;
+        texto.text = "Busca los productos que tengan un precio de " + "$" + valor.ToString() + ".000" + ", una etiqueta de color " + color.ToUpper() + " y una forma " + nomEtiqueta.ToUpper();
         afec = Random.Range(0, etec.Length);
-       
-
-        
     }
     private void Start()
     {
-        Invoke("cambios", 0.2f);
+        Invoke(nameof(Cambios), 0.2f);
     }
-    void cambios()
+    void Cambios()
     {
         if (etec[afec].valor != valor)
         {
             etec[afec].valor = valor;
             etec[afec].texto.text = "$" + valor.ToString() + ".000";
-           
-        }
-        if ( etec[afec].nomcolor != color )
-        {
-           
-            etec[afec].nomcolor = color;
-            etec[afec].cubo.GetComponent<MeshRenderer>().material.color =col[A];
 
         }
-        if ( etec[afec].nomEtiqueta != nomEtiqueta)
+        if (etec[afec].nomcolor != color)
         {
-         
+
+            etec[afec].nomcolor = color;
+            etec[afec].cubo.GetComponent<MeshRenderer>().material.color = col[A];
+
+        }
+        if (etec[afec].nomEtiqueta != nomEtiqueta)
+        {
+
             etec[afec].nomEtiqueta = nomEtiqueta;
             etec[afec].gameObject.GetComponent<MeshFilter>().mesh = etec[afec].mesh[col1];
-            
+
         }
-     
-        
+
+
         modifEti = etec[afec].gameObject;
         CalcularPuntos();
     }
@@ -98,14 +95,12 @@ public class Managernivel : MonoBehaviour
         {
             tiempo_2 += Time.deltaTime;
         }
-      
+
     }
-    public void iniciarJuego()
+    public void IniciarJuego()
     {
         incioJ = !incioJ;
         jun.lista.Add(tiempo_1.ToString());
-       
-       
     }
     public void ReiniciarCarga()
     {
@@ -114,7 +109,7 @@ public class Managernivel : MonoBehaviour
         jun.lista.Clear();
         jun.lista = re;
         jun.nvl = 0;
-      
+
     }
     public void ReinicioTotal()
     {
@@ -122,5 +117,4 @@ public class Managernivel : MonoBehaviour
         jun.nvl = 0;
         jun.pasNivel = true;
     }
-
 }

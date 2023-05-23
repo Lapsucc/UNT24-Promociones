@@ -8,10 +8,8 @@ public class Movimiento : MonoBehaviour
     bool isright = false;
 
     public Rigidbody rb;
-    public float speedForce;
-    
-    
-    
+    public float speedForce; 
+
     public void clickleft()
     {
         isleft = true;
@@ -24,36 +22,19 @@ public class Movimiento : MonoBehaviour
     {
         isright = true;
     }
-    public void releaseright() 
+    public void releaseright()
     {
         isright = false;
-    }
-    
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            
+    } 
 
-        }
-        if (Input.GetButtonDown("Horizontal"))
-        {
-            rb.AddForce(new Vector3(0, 0, speedForce * Time.deltaTime));
-        }
+    private void LateUpdate()
+    {
+        if (Input.GetButtonDown("Horizontal")) rb.AddForce(new Vector3(0, 0, speedForce * Time.deltaTime));
     }
 
     private void FixedUpdate()
     {
-        
-        
-      if(isleft)
-        {
-            rb.AddForce(new Vector3(0, 0, -speedForce) * Time.deltaTime);
-        }
-       
-        if (isright)
-        {
-            rb.AddForce(new Vector3(0, 0,speedForce) * Time.deltaTime);
-        }
+        if (isright) rb.AddForce(new Vector3(0, 0, speedForce) * Time.deltaTime);
+        else if (isleft) rb.AddForce(new Vector3(0, 0, -speedForce) * Time.deltaTime);
     }
 }

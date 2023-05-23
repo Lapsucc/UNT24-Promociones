@@ -34,8 +34,7 @@ public class Agarrar : MonoBehaviour
         cam = Camera.main;
         animRigid = anim.GetComponent<Rigidbody>();
         animFilter = anim.GetComponent<MeshFilter>();
-        animRender = anim.GetComponent<MeshRenderer>();
-
+        animRender = anim.GetComponent<MeshRenderer>(); 
     }
 
    
@@ -72,19 +71,7 @@ public class Agarrar : MonoBehaviour
                     {
                         proim.Add(hit.transform.GetComponent<Objetos>().Imag);
                     }
-                }
-                
-                
-               /* if (hit.transform.GetComponent<Objetos>().etiketas.valor == manager.valor && hit.transform.GetComponent<Objetos>().etiketas.nomcolor == manager.color)
-                {
-                    manager.puntosbuenos++;
-                }
-                else
-                {
-                    manager.puntosmalos++;
-                }*/
-               
-
+                } 
             }
         }
 
@@ -98,19 +85,6 @@ public class Agarrar : MonoBehaviour
             falso.pasNivel = false;
            boton.SetActive(false);
             
-        }
-   
-       
-    
-        /*
-         if(manager.puntosbuenos==jeison.punetos buenos maximos alcanzables ){
-        pasampos el nievel 
-        activar boton siguiente nivel
-        }
-        else{
-        no pasamos nivel
-        desactivando el boton siguiente nivel 
-        }
-         */
+        } 
     }
 }
