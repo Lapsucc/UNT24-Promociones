@@ -15,21 +15,17 @@ public class MenuManager : MonoBehaviour
     public List<string> lag;
     public GameObject nom;
     public GameObject next;
-    public Jeison jey;
     public Dropdown drop;
+
     void Start()
     {
-        jey.lista.Clear();
-        jey.nvl = 0;
     }
+
     public void NuevoJugador()
     {
         if (!string.IsNullOrWhiteSpace(RecopiladoNombre.text) && !string.IsNullOrWhiteSpace(recopiladorCedula.text))
         {
             string ha = RecopiladoNombre.text + " " + recopiladorCedula.text;
-            jey.lista.Add(ha);
-            // jey.lista.Add(recopiladorCedula.text);
-
             nom.SetActive(true);
 
         }
@@ -64,7 +60,6 @@ public class MenuManager : MonoBehaviour
     public void SelecOldPlayer()
     {
         int L = drop.value;
-        jey.lista.Add(lag[L]);
     }
 
     public void SetLevel(string lvl)

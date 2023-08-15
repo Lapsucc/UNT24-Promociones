@@ -17,74 +17,69 @@ public class Agarrar : MonoBehaviour
     public Managernivel manager;
     public Colision coli;
     public Image[] imagenlistaaprovado;
-    public Sprite[] spritebuenos;
+    public Sprite[] checks;
     public Image[] Renders;
-    public GameObject[] product;
     public int suma;
-    public Jeison falso;
     public GameObject boton;
     public GameObject boton_no;
     public Repetirnivel pasar;
     public Objetos obj;
     public List<Sprite> proim;
-    
+
     void Start()
     {
         manager = GetComponent<Managernivel>();
         cam = Camera.main;
         animRigid = anim.GetComponent<Rigidbody>();
         animFilter = anim.GetComponent<MeshFilter>();
-        animRender = anim.GetComponent<MeshRenderer>(); 
+        animRender = anim.GetComponent<MeshRenderer>();
+
     }
 
-   
-    void Update()
+
+    void LateUpdate()
     {
-        if(Input.GetMouseButtonDown(0) && seleccion == true)
+        if (Input.GetMouseButtonDown(0) && seleccion == true)
         {
             ray = cam.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray.origin, ray.direction, out hit) && hit.transform.GetComponent<Objetos>()!=null)
+            if (Physics.Raycast(ray.origin, ray.direction, out hit))
             {
-                anim.SetActive(true);
-                anim.transform.position = inicioanim.position;
-                anim.transform.localScale = hit.transform.localScale;
-                animRigid.useGravity = true;
-                animFilter.mesh = hit.transform.GetComponent<MeshFilter>().sharedMesh;
-                animRender.materials = hit.transform.GetComponent<MeshRenderer>().materials;
-                if(coli.list.Contains(hit.transform.GetComponent<Objetos>().nombre) == false)
+                hit.transform.TryGetComponent(out Objetos objs);
+
+                if (objs != null)
                 {
-                    coli.list.Add(hit.transform.GetComponent<Objetos>().nombre );
-                    if (hit.transform.GetComponent<Objetos>().etiketas.valor == manager.valor && hit.transform.GetComponent<Objetos>().etiketas.nomcolor == manager.color&& hit.transform.GetComponent<Objetos>().etiketas.nomEtiqueta == manager.nomEtiqueta)
+                    anim.SetActive(true);
+                    anim.transform.position = inicioanim.position;
+                    anim.transform.localScale = hit.transform.localScale;
+                    animRigid.useGravity = true;
+                    animFilter.mesh = hit.transform.GetComponent<MeshFilter>().sharedMesh;
+                    animRender.materials = hit.transform.GetComponent<MeshRenderer>().materials;
+
+                    if (!coli.list.Contains(objs.nombre))
                     {
-                        imagenlistaaprovado[suma].sprite = spritebuenos[0];
-                        manager.puntosbuenos++;
-                        coli.list2.Add(" Aprovado");
+                        coli.list.Add(objs.nombre);
+                        bool validCheck = objs.etiketas.valor.Equals(manager.valor) && objs.etiketas.nomcolor.Equals(manager.color) && objs.etiketas.nomEtiqueta.Equals(manager.nomEtiqueta);
+
+                        if (validCheck) coli.list2.Add("Aprobado");
+                        else coli.list2.Add("Rechazado");
+
+                        suma++;
+                        coli.prodSprite.Add(objs.Imag);
                     }
-                    else
-                    {
-                        imagenlistaaprovado[suma].sprite = spritebuenos[1];
-                        manager.puntosmalos++;
-                        coli.list2.Add(" Rechazado");
-                    }
-                    suma++;
-                   
-                    {
-                        proim.Add(hit.transform.GetComponent<Objetos>().Imag);
-                    }
-                } 
+                }
             }
         }
 
-        if (manager.puntosbuenos > 0 && manager.puntosmalos == 0 && manager.puntosbuenos >= falso.nvl)
+        if (manager.puntosbuenos > 0 && manager.puntosmalos == 0)
         {
-            falso.pasNivel = true;
+            //falso.pasNivel = true;
             boton.SetActive(true);
         }
-        else 
+        else
         {
-            falso.pasNivel = false;
-           boton.SetActive(false);
-            
-        } 
+            //falso.pasNivel = false;
+            boton.SetActive(false);
+
+        }
     }
 }

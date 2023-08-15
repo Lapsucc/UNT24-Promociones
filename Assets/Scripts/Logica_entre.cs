@@ -6,7 +6,7 @@ public class Logica_entre : MonoBehaviour
 {
     private void Awake()
     {
-        var noDestruirEntreEscenas = FindObjectsOfType<Logica_entre>();
+        Logica_entre[] noDestruirEntreEscenas = FindObjectsOfType<Logica_entre>();
         if (noDestruirEntreEscenas.Length>1)
         {
             Destroy(gameObject);

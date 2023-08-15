@@ -8,39 +8,49 @@ public class Colision : MonoBehaviour
 {
     public GameObject panel;
     public List<string> list, list2;
-    public TextMeshProUGUI[] textos;
+    public TMP_Text[] prodName;
     public Sprite[] renders;
     public Agarrar agarro;
     public Managernivel mana;
-    public Jeison jik;
     public GameObject seguir;
     public GameObject etuqueta;
-
+    [Space]
+    [SerializeField] private GameObject prefabProd;
+    [SerializeField] private Transform prodParent;
+    [SerializeField] private Sprite[] checkers;
+    public List<Sprite> prodSprite;
+    private bool checkd = false;
     public void Reconteo()
     {
-        for (int i = 0; i < list.Count; i++)
+        checkd = true;
+        TryGetComponent(out Rigidbody rb);
+        rb.velocity = Vector3.zero;
+
+        foreach (string prod in list2)
         {
-            textos[i].text = list[i];
-            agarro.imagenlistaaprovado[i].gameObject.SetActive(true);
-            agarro.product[i].SetActive(true);
-            agarro.product[i].GetComponent<Image>().sprite = agarro.proim[i];
+            GameObject pf = Instantiate(prefabProd, prodParent);
+            pf.TryGetComponent(out TMP_Text txt);
+            txt.text = list[list2.IndexOf(prod)].ToString();
+            pf.transform.GetChild(0).TryGetComponent(out Image chkSP);
+            pf.transform.GetChild(1).TryGetComponent(out Image prodSP);
+
+            //prodSP.sprite = agarro.proim[indx];
+
+            if (prod.Equals("Aprobado") || prod.Equals("APROBADO")) chkSP.sprite = checkers[0];
+            else if (prod.Equals("Rechazado") || prod.Equals("RECHAZADO")) chkSP.sprite = checkers[1];
         }
-
-
     }
     private void OnTriggerEnter(Collider other)
     {
+        TryGetComponent(out Collider col);
+        col.enabled = false;
+
         if (other.gameObject.CompareTag("final"))
         {
-            jik.lista.Add(mana.tiempo_2.ToString());
-            float p = mana.tiempo_2 + mana.tiempo_1;
-            jik.lista.Add(p.ToString());
+            if (!checkd) Reconteo();
             panel.SetActive(true);
             seguir.SetActive(false);
             etuqueta.SetActive(false);
-            Reconteo();
-            jik.lista.Add(mana.puntosbuenos.ToString());
-            jik.lista.Add(mana.puntosmalos.ToString());
         }
     }
 }
