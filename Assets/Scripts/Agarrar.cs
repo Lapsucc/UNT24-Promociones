@@ -8,78 +8,52 @@ public class Agarrar : MonoBehaviour
     RaycastHit hit;
     Ray ray;
     Camera cam;
-    public bool seleccion = true;
-    public GameObject anim;
-    Rigidbody animRigid;
-    MeshFilter animFilter;
-    MeshRenderer animRender;
-    public Transform inicioanim;
-    public Managernivel manager;
-    public Colision coli;
-    public Image[] imagenlistaaprovado;
-    public Sprite[] checks;
-    public Image[] Renders;
-    public int suma;
-    public GameObject boton;
-    public GameObject boton_no;
-    public Repetirnivel pasar;
-    public Objetos obj;
-    public List<Sprite> proim;
+
+    [SerializeField] private Colision coli;
+    [SerializeField] private GameManager manager;
+    [SerializeField] private LayerMask mask;
+    [SerializeField] private Transform setPosition;
 
     void Start()
     {
-        manager = GetComponent<Managernivel>();
+        TryGetComponent(out manager);
         cam = Camera.main;
-        animRigid = anim.GetComponent<Rigidbody>();
-        animFilter = anim.GetComponent<MeshFilter>();
-        animRender = anim.GetComponent<MeshRenderer>();
-
     }
 
 
     void LateUpdate()
     {
-        if (Input.GetMouseButtonDown(0) && seleccion == true)
+        if (Input.GetMouseButtonDown(0) && !coli.Checkd)
         {
             ray = cam.ScreenPointToRay(Input.mousePosition);
-            if (Physics.Raycast(ray.origin, ray.direction, out hit))
+            Debug.DrawRay(ray.origin, ray.direction * 25);
+            if (Physics.Raycast(ray, out hit, 25, mask))
             {
-                hit.transform.TryGetComponent(out Objetos objs);
+                hit.transform.TryGetComponent(out Tags obj);
 
-                if (objs != null)
+                if (obj && !obj.Checkd)
                 {
-                    anim.SetActive(true);
-                    anim.transform.position = inicioanim.position;
-                    anim.transform.localScale = hit.transform.localScale;
-                    animRigid.useGravity = true;
-                    animFilter.mesh = hit.transform.GetComponent<MeshFilter>().sharedMesh;
-                    animRender.materials = hit.transform.GetComponent<MeshRenderer>().materials;
+                    obj.Checkd = true;
+                    StartCoroutine(ChangePosition(obj.MyObject));
 
-                    if (!coli.list.Contains(objs.nombre))
+                    if (!coli.MyProducts.Contains(obj.MyName))
                     {
-                        coli.list.Add(objs.nombre);
-                        bool validCheck = objs.etiketas.valor.Equals(manager.valor) && objs.etiketas.nomcolor.Equals(manager.color) && objs.etiketas.nomEtiqueta.Equals(manager.nomEtiqueta);
-
-                        if (validCheck) coli.list2.Add("Aprobado");
-                        else coli.list2.Add("Rechazado");
-
-                        suma++;
-                        coli.prodSprite.Add(objs.Imag);
+                        bool validCheck = obj.MyPrice.Equals(manager.MyPrice) && obj.MyColor.Equals(manager.MyColor) && obj.MyTag.Equals(manager.MyTag);
+                        coli.AddItem(validCheck, obj.MyName, obj.MySprite);
                     }
                 }
             }
         }
+    }
 
-        if (manager.puntosbuenos > 0 && manager.puntosmalos == 0)
+    private IEnumerator ChangePosition(Transform obj)
+    {
+        obj.parent = setPosition;
+        while (obj.position != setPosition.position)
         {
-            //falso.pasNivel = true;
-            boton.SetActive(true);
+            obj.position = Vector3.MoveTowards(obj.position, setPosition.position, 14 * Time.deltaTime);
+            yield return null;
         }
-        else
-        {
-            //falso.pasNivel = false;
-            boton.SetActive(false);
-
-        }
+        yield break;
     }
 }

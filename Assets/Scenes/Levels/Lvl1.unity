@@ -2279,9 +2279,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e424db802ebc84ab96600be963f871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  etiketas: {fileID: 1744603545}
+  myTag: {fileID: 0}
   nombre: Lentejas
   Imag: {fileID: 21300000, guid: 9ec33042faf13c34eaa5f155520713d2, type: 3}
+  MyTag: 
 --- !u!65 &163950516
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4009,9 +4010,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e424db802ebc84ab96600be963f871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  etiketas: {fileID: 0}
+  myTag: {fileID: 0}
   nombre: Lentejas
   Imag: {fileID: 0}
+  MyTag: 
 --- !u!65 &261336300
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4803,31 +4805,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0100000002000000030000000400000005000000
-  valor: 0
-  colores:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.24705882, b: 1, a: 1}
-  texto: {fileID: 984726621}
-  coler: {r: 0, g: 0, b: 0, a: 1}
-  nomcolor: 
-  cubo: {fileID: 305836436}
-  mesh:
-  - {fileID: -5495902117074765545, guid: 7d792b68251a6ed4094134d5c3953b6d, type: 3}
-  - {fileID: 2534964839176971238, guid: ea6b4d501ee25d34583bb4e69fe7dd87, type: 3}
-  - {fileID: -7387706064836869012, guid: b80555c8c6af54945854d08953cd132b, type: 3}
-  - {fileID: -5495902117074765545, guid: c03acd0b16f174e4e97314eca6d16da5, type: 3}
-  manag: {fileID: 848077136}
-  Product: {fileID: 0}
-  jeison: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
-  eti: 0
-  nomEtiqueta: 
-  ArrayEtiquetas:
-  - cuadrada
-  - estrella
-  - redonda
-  - triangular
-  A: 0
+  MyTag: 
+  MyColor: 
+  MyPrice: 
+  Price: {fileID: 0}
+  MyName: 
+  MyObject: {fileID: 0}
+  MySprite: {fileID: 0}
 --- !u!1001 &307600039
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7098,31 +7082,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0100000002000000030000000400000005000000
-  valor: 0
-  colores:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.24705882, b: 1, a: 1}
-  texto: {fileID: 860604807}
-  coler: {r: 0, g: 0, b: 0, a: 1}
-  nomcolor: 
-  cubo: {fileID: 389464301}
-  mesh:
-  - {fileID: -5495902117074765545, guid: 7d792b68251a6ed4094134d5c3953b6d, type: 3}
-  - {fileID: 2534964839176971238, guid: ea6b4d501ee25d34583bb4e69fe7dd87, type: 3}
-  - {fileID: -7387706064836869012, guid: b80555c8c6af54945854d08953cd132b, type: 3}
-  - {fileID: -5495902117074765545, guid: c03acd0b16f174e4e97314eca6d16da5, type: 3}
-  manag: {fileID: 848077136}
-  Product: {fileID: 0}
-  jeison: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
-  eti: 0
-  nomEtiqueta: 
-  ArrayEtiquetas:
-  - cuadrada
-  - estrella
-  - redonda
-  - triangular
-  A: 0
+  MyTag: 
+  MyColor: 
+  MyPrice: 
+  Price: {fileID: 0}
+  MyName: 
+  MyObject: {fileID: 0}
+  MySprite: {fileID: 0}
 --- !u!1001 &396379266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7253,36 +7219,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 612142640}
-  list: []
-  list2: []
-  textos:
-  - {fileID: 2003960411}
-  - {fileID: 990371944}
-  - {fileID: 1977798088}
-  - {fileID: 916383110}
-  - {fileID: 607407978}
-  - {fileID: 21515105}
-  - {fileID: 2037876293}
-  - {fileID: 606902985}
-  - {fileID: 1975257076}
-  - {fileID: 1131999861}
-  - {fileID: 544327732}
-  - {fileID: 1017021603}
-  - {fileID: 1443819439}
-  - {fileID: 1214281175}
-  - {fileID: 2066462542}
-  - {fileID: 783014174}
-  - {fileID: 819811317}
-  - {fileID: 1492635521}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  renders: []
-  agarro: {fileID: 848077138}
-  mana: {fileID: 848077136}
-  jik: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
   seguir: {fileID: 0}
   etuqueta: {fileID: 0}
+  MyProducts: []
+  prefabProd: {fileID: 0}
+  prodParent: {fileID: 0}
+  checkers: []
+  Checkd: 0
+  selectedItems: 
+  selectedSprites: []
 --- !u!65 &399044554
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -7324,6 +7269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 299558bd64a1b5142a572cccb6e7f02c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  col: {fileID: 0}
   rb: {fileID: 399044555}
   speedForce: 400
 --- !u!4 &404034020 stripped
@@ -7426,9 +7372,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e424db802ebc84ab96600be963f871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  etiketas: {fileID: 1744603545}
+  myTag: {fileID: 0}
   nombre: Lentejas
   Imag: {fileID: 21300000, guid: 9ec33042faf13c34eaa5f155520713d2, type: 3}
+  MyTag: 
 --- !u!65 &409817689
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8241,7 +8188,6 @@ MonoBehaviour:
   nivel: {fileID: 848077136}
   puntosbuenos: 0
   puntosmalos: 0
-  reizor: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
   PanelNext: {fileID: 852003172}
   PanelBack: {fileID: 434789299}
   seguir: {fileID: 0}
@@ -8282,31 +8228,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0100000002000000030000000400000005000000
-  valor: 0
-  colores:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.24705882, b: 1, a: 1}
-  texto: {fileID: 1329366528}
-  coler: {r: 0, g: 0, b: 0, a: 1}
-  nomcolor: 
-  cubo: {fileID: 495072660}
-  mesh:
-  - {fileID: -5495902117074765545, guid: 7d792b68251a6ed4094134d5c3953b6d, type: 3}
-  - {fileID: 2534964839176971238, guid: ea6b4d501ee25d34583bb4e69fe7dd87, type: 3}
-  - {fileID: -7387706064836869012, guid: b80555c8c6af54945854d08953cd132b, type: 3}
-  - {fileID: -5495902117074765545, guid: c03acd0b16f174e4e97314eca6d16da5, type: 3}
-  manag: {fileID: 848077136}
-  Product: {fileID: 0}
-  jeison: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
-  eti: 0
-  nomEtiqueta: 
-  ArrayEtiquetas:
-  - cuadrada
-  - estrella
-  - redonda
-  - triangular
-  A: 0
+  MyTag: 
+  MyColor: 
+  MyPrice: 
+  Price: {fileID: 0}
+  MyName: 
+  MyObject: {fileID: 0}
+  MySprite: {fileID: 0}
 --- !u!1001 &496174132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11163,7 +11091,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomEscena: 3
-  cul: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
 --- !u!4 &644985410
 Transform:
   m_ObjectHideFlags: 0
@@ -11602,9 +11529,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e424db802ebc84ab96600be963f871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  etiketas: {fileID: 0}
+  myTag: {fileID: 0}
   nombre: Lentejas
   Imag: {fileID: 0}
+  MyTag: 
 --- !u!65 &678764707
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12538,7 +12466,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomEscena: 6
-  cul: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
 --- !u!4 &709575406
 Transform:
   m_ObjectHideFlags: 0
@@ -14495,9 +14422,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e424db802ebc84ab96600be963f871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  etiketas: {fileID: 0}
+  myTag: {fileID: 0}
   nombre: Lentejas
   Imag: {fileID: 0}
+  MyTag: 
 --- !u!65 &794422441
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -15642,31 +15570,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0100000002000000030000000400000005000000
-  valor: 0
-  colores:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.24705882, b: 1, a: 1}
-  texto: {fileID: 805110038}
-  coler: {r: 0, g: 0, b: 0, a: 1}
-  nomcolor: 
-  cubo: {fileID: 834030760}
-  mesh:
-  - {fileID: -5495902117074765545, guid: 7d792b68251a6ed4094134d5c3953b6d, type: 3}
-  - {fileID: 2534964839176971238, guid: ea6b4d501ee25d34583bb4e69fe7dd87, type: 3}
-  - {fileID: -7387706064836869012, guid: b80555c8c6af54945854d08953cd132b, type: 3}
-  - {fileID: -5495902117074765545, guid: c03acd0b16f174e4e97314eca6d16da5, type: 3}
-  manag: {fileID: 848077136}
-  Product: {fileID: 0}
-  jeison: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
-  eti: 0
-  nomEtiqueta: 
-  ArrayEtiquetas:
-  - cuadrada
-  - estrella
-  - redonda
-  - triangular
-  A: 0
+  MyTag: 
+  MyColor: 
+  MyPrice: 
+  Price: {fileID: 0}
+  MyName: 
+  MyObject: {fileID: 0}
+  MySprite: {fileID: 0}
 --- !u!1 &839080095 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7348248430999934345, guid: 928b3d02a807d324798d168ffc4f84b4, type: 3}
@@ -15703,61 +15613,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d3a0a15a01adee4fad1476a174e2e82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0100000002000000030000000400000005000000
-  valor: 0
   etiquetas:
   - {fileID: 21300000, guid: 5e6fed9e98478eb4198eb7f4abf6f0c0, type: 3}
   - {fileID: 21300000, guid: 1e8552f2714146e4f94f912e980788a5, type: 3}
   - {fileID: 21300000, guid: 7acf1a66a9d3853418b1a7d4fda49690, type: 3}
   - {fileID: 21300000, guid: 8d045b3343155674ba28e17e80306cfa, type: 3}
-  colores:
-  - Rojo
-  - Azul
-  color: 
-  texto: {fileID: 920112856}
-  texto2: {fileID: 823887712}
-  texto3: {fileID: 528965352}
-  imagen: {fileID: 1042209382}
-  imagen2: {fileID: 1833249891}
-  col:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.24647593, b: 1, a: 1}
-  tiempo_1: 0
-  puntosbuenos: 0
-  puntosmalos: 0
-  incioJ: 0
-  jun: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
-  tiempo_2: 0
-  re: []
-  A: 0
-  col1: 0
-  nomEtiqueta: 
-  ArrayEtiquetas:
-  - cuadrada
-  - estrella
-  - redonda
-  - triangular
-  etec:
-  - {fileID: 1745008861}
-  - {fileID: 2004788308}
-  - {fileID: 389464303}
-  - {fileID: 1254150185}
-  - {fileID: 1996279858}
-  - {fileID: 915169391}
-  - {fileID: 1744603545}
-  - {fileID: 2038933798}
-  - {fileID: 1663642076}
-  - {fileID: 305836438}
-  - {fileID: 1072165618}
-  - {fileID: 834030762}
-  - {fileID: 495072662}
-  - {fileID: 1063899660}
-  - {fileID: 958115245}
-  - {fileID: 1646009580}
-  - {fileID: 1644686093}
-  - {fileID: 1419344271}
-  afec: 0
-  modifEti: {fileID: 0}
+  playerTag: {fileID: 0}
+  playerPrice: {fileID: 0}
+  tags: []
+  tagMesh: []
+  prices: []
+  cols: []
+  right: {fileID: 0}
+  wrong: {fileID: 0}
+  endPanel: {fileID: 0}
+  tagList: []
 --- !u!4 &848077137
 Transform:
   m_ObjectHideFlags: 0
@@ -15785,63 +15655,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66838c3db8b9cdf4d9158858dc362b6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  seleccion: 1
-  anim: {fileID: 711234985}
-  inicioanim: {fileID: 1009509967}
-  manager: {fileID: 848077136}
   coli: {fileID: 399044553}
-  imagenlistaaprovado:
-  - {fileID: 1583624811}
-  - {fileID: 301258411}
-  - {fileID: 1465868300}
-  - {fileID: 1209121460}
-  - {fileID: 2115061838}
-  - {fileID: 1710606842}
-  - {fileID: 1913562450}
-  - {fileID: 1131426701}
-  - {fileID: 419806360}
-  - {fileID: 1625694690}
-  - {fileID: 882036299}
-  - {fileID: 1771302927}
-  - {fileID: 1435462506}
-  - {fileID: 1033174765}
-  - {fileID: 793020073}
-  - {fileID: 328852270}
-  - {fileID: 1847006415}
-  - {fileID: 294335247}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  spritebuenos:
-  - {fileID: 3585297803357250098, guid: 725dfe9de4fbe9a4bafb89429b22027d, type: 3}
-  - {fileID: 1356049885608302545, guid: 725dfe9de4fbe9a4bafb89429b22027d, type: 3}
-  Renders: []
-  product:
-  - {fileID: 778053663}
-  - {fileID: 19638936}
-  - {fileID: 410303748}
-  - {fileID: 1193464646}
-  - {fileID: 2072743341}
-  - {fileID: 1669303306}
-  - {fileID: 283199078}
-  - {fileID: 383652449}
-  - {fileID: 1132458225}
-  - {fileID: 2036827264}
-  - {fileID: 1131436835}
-  - {fileID: 1428459574}
-  - {fileID: 231611262}
-  - {fileID: 1031013297}
-  - {fileID: 2013073515}
-  - {fileID: 1039191781}
-  - {fileID: 1030108073}
-  - {fileID: 537893942}
-  suma: 0
-  falso: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
-  boton: {fileID: 852003172}
-  boton_no: {fileID: 0}
-  pasar: {fileID: 482768986}
-  obj: {fileID: 0}
-  proim: []
+  manager: {fileID: 848077136}
+  mask:
+    serializedVersion: 2
+    m_Bits: 0
+  setPosition: {fileID: 0}
 --- !u!114 &848077139
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15939,7 +15758,6 @@ MonoBehaviour:
   nivel: {fileID: 848077136}
   puntosbuenos: 0
   puntosmalos: 0
-  reizor: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
   PanelNext: {fileID: 852003172}
   PanelBack: {fileID: 434789299}
   seguir: {fileID: 0}
@@ -17409,31 +17227,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0100000002000000030000000400000005000000
-  valor: 0
-  colores:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.24705882, b: 1, a: 1}
-  texto: {fileID: 1902505368}
-  coler: {r: 0, g: 0, b: 0, a: 1}
-  nomcolor: 
-  cubo: {fileID: 915169389}
-  mesh:
-  - {fileID: -5495902117074765545, guid: 7d792b68251a6ed4094134d5c3953b6d, type: 3}
-  - {fileID: 2534964839176971238, guid: ea6b4d501ee25d34583bb4e69fe7dd87, type: 3}
-  - {fileID: -7387706064836869012, guid: b80555c8c6af54945854d08953cd132b, type: 3}
-  - {fileID: -5495902117074765545, guid: c03acd0b16f174e4e97314eca6d16da5, type: 3}
-  manag: {fileID: 848077136}
-  Product: {fileID: 0}
-  jeison: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
-  eti: 0
-  nomEtiqueta: 
-  ArrayEtiquetas:
-  - cuadrada
-  - estrella
-  - redonda
-  - triangular
-  A: 0
+  MyTag: 
+  MyColor: 
+  MyPrice: 
+  Price: {fileID: 0}
+  MyName: 
+  MyObject: {fileID: 0}
+  MySprite: {fileID: 0}
 --- !u!1 &916383108
 GameObject:
   m_ObjectHideFlags: 0
@@ -17736,31 +17536,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0100000002000000030000000400000005000000
-  valor: 0
-  colores:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.24705882, b: 1, a: 1}
-  texto: {fileID: 684920920}
-  coler: {r: 0, g: 0, b: 0, a: 1}
-  nomcolor: 
-  cubo: {fileID: 958115243}
-  mesh:
-  - {fileID: -5495902117074765545, guid: 7d792b68251a6ed4094134d5c3953b6d, type: 3}
-  - {fileID: 2534964839176971238, guid: ea6b4d501ee25d34583bb4e69fe7dd87, type: 3}
-  - {fileID: -7387706064836869012, guid: b80555c8c6af54945854d08953cd132b, type: 3}
-  - {fileID: -5495902117074765545, guid: c03acd0b16f174e4e97314eca6d16da5, type: 3}
-  manag: {fileID: 848077136}
-  Product: {fileID: 0}
-  jeison: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
-  eti: 0
-  nomEtiqueta: 
-  ArrayEtiquetas:
-  - cuadrada
-  - estrella
-  - redonda
-  - triangular
-  A: 0
+  MyTag: 
+  MyColor: 
+  MyPrice: 
+  Price: {fileID: 0}
+  MyName: 
+  MyObject: {fileID: 0}
+  MySprite: {fileID: 0}
 --- !u!1 &958967689 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8975286123110852453, guid: 79e9e6e7790031d4faaaf310b96f9655, type: 3}
@@ -18697,9 +18479,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e424db802ebc84ab96600be963f871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  etiketas: {fileID: 2038933798}
+  myTag: {fileID: 0}
   nombre: Lentejas
   Imag: {fileID: 21300000, guid: 9ec33042faf13c34eaa5f155520713d2, type: 3}
+  MyTag: 
 --- !u!65 &1016091620
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20031,9 +19814,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e424db802ebc84ab96600be963f871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  etiketas: {fileID: 1744603545}
+  myTag: {fileID: 0}
   nombre: Lentejas
   Imag: {fileID: 21300000, guid: 9ec33042faf13c34eaa5f155520713d2, type: 3}
+  MyTag: 
 --- !u!65 &1059149905
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -20495,31 +20279,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0100000002000000030000000400000005000000
-  valor: 0
-  colores:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.24705882, b: 1, a: 1}
-  texto: {fileID: 1993542294}
-  coler: {r: 0, g: 0, b: 0, a: 1}
-  nomcolor: 
-  cubo: {fileID: 1063899658}
-  mesh:
-  - {fileID: -5495902117074765545, guid: 7d792b68251a6ed4094134d5c3953b6d, type: 3}
-  - {fileID: 2534964839176971238, guid: ea6b4d501ee25d34583bb4e69fe7dd87, type: 3}
-  - {fileID: -7387706064836869012, guid: b80555c8c6af54945854d08953cd132b, type: 3}
-  - {fileID: -5495902117074765545, guid: c03acd0b16f174e4e97314eca6d16da5, type: 3}
-  manag: {fileID: 848077136}
-  Product: {fileID: 0}
-  jeison: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
-  eti: 0
-  nomEtiqueta: 
-  ArrayEtiquetas:
-  - cuadrada
-  - estrella
-  - redonda
-  - triangular
-  A: 0
+  MyTag: 
+  MyColor: 
+  MyPrice: 
+  Price: {fileID: 0}
+  MyName: 
+  MyObject: {fileID: 0}
+  MySprite: {fileID: 0}
 --- !u!1 &1064596182 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7067708180282032473, guid: edb9d7d98f0feea4eb6aa43d666c7f03, type: 3}
@@ -20887,31 +20653,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0100000002000000030000000400000005000000
-  valor: 0
-  colores:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.24705882, b: 1, a: 1}
-  texto: {fileID: 673106700}
-  coler: {r: 0, g: 0, b: 0, a: 1}
-  nomcolor: 
-  cubo: {fileID: 1072165616}
-  mesh:
-  - {fileID: -5495902117074765545, guid: 7d792b68251a6ed4094134d5c3953b6d, type: 3}
-  - {fileID: 2534964839176971238, guid: ea6b4d501ee25d34583bb4e69fe7dd87, type: 3}
-  - {fileID: -7387706064836869012, guid: b80555c8c6af54945854d08953cd132b, type: 3}
-  - {fileID: -5495902117074765545, guid: c03acd0b16f174e4e97314eca6d16da5, type: 3}
-  manag: {fileID: 848077136}
-  Product: {fileID: 0}
-  jeison: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
-  eti: 0
-  nomEtiqueta: 
-  ArrayEtiquetas:
-  - cuadrada
-  - estrella
-  - redonda
-  - triangular
-  A: 0
+  MyTag: 
+  MyColor: 
+  MyPrice: 
+  Price: {fileID: 0}
+  MyName: 
+  MyObject: {fileID: 0}
+  MySprite: {fileID: 0}
 --- !u!1 &1072434567
 GameObject:
   m_ObjectHideFlags: 0
@@ -22114,9 +21862,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e424db802ebc84ab96600be963f871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  etiketas: {fileID: 2038933798}
+  myTag: {fileID: 0}
   nombre: Lentejas
   Imag: {fileID: 21300000, guid: 9ec33042faf13c34eaa5f155520713d2, type: 3}
+  MyTag: 
 --- !u!65 &1138029366
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -23600,31 +23349,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0100000002000000030000000400000005000000
-  valor: 0
-  colores:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.24705882, b: 1, a: 1}
-  texto: {fileID: 1996775740}
-  coler: {r: 0, g: 0, b: 0, a: 1}
-  nomcolor: 
-  cubo: {fileID: 1254150183}
-  mesh:
-  - {fileID: -5495902117074765545, guid: 7d792b68251a6ed4094134d5c3953b6d, type: 3}
-  - {fileID: 2534964839176971238, guid: ea6b4d501ee25d34583bb4e69fe7dd87, type: 3}
-  - {fileID: -7387706064836869012, guid: b80555c8c6af54945854d08953cd132b, type: 3}
-  - {fileID: -5495902117074765545, guid: c03acd0b16f174e4e97314eca6d16da5, type: 3}
-  manag: {fileID: 848077136}
-  Product: {fileID: 0}
-  jeison: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
-  eti: 0
-  nomEtiqueta: 
-  ArrayEtiquetas:
-  - cuadrada
-  - estrella
-  - redonda
-  - triangular
-  A: 0
+  MyTag: 
+  MyColor: 
+  MyPrice: 
+  Price: {fileID: 0}
+  MyName: 
+  MyObject: {fileID: 0}
+  MySprite: {fileID: 0}
 --- !u!1001 &1264574080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24327,9 +24058,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e424db802ebc84ab96600be963f871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  etiketas: {fileID: 0}
+  myTag: {fileID: 0}
   nombre: Lentejas
   Imag: {fileID: 0}
+  MyTag: 
 --- !u!65 &1315983421
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25746,31 +25478,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0100000002000000030000000400000005000000
-  valor: 0
-  colores:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.24705882, b: 1, a: 1}
-  texto: {fileID: 852264737}
-  coler: {r: 0, g: 0, b: 0, a: 1}
-  nomcolor: 
-  cubo: {fileID: 1419344269}
-  mesh:
-  - {fileID: -5495902117074765545, guid: 7d792b68251a6ed4094134d5c3953b6d, type: 3}
-  - {fileID: 2534964839176971238, guid: ea6b4d501ee25d34583bb4e69fe7dd87, type: 3}
-  - {fileID: -7387706064836869012, guid: b80555c8c6af54945854d08953cd132b, type: 3}
-  - {fileID: -5495902117074765545, guid: c03acd0b16f174e4e97314eca6d16da5, type: 3}
-  manag: {fileID: 848077136}
-  Product: {fileID: 0}
-  jeison: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
-  eti: 0
-  nomEtiqueta: 
-  ArrayEtiquetas:
-  - cuadrada
-  - estrella
-  - redonda
-  - triangular
-  A: 0
+  MyTag: 
+  MyColor: 
+  MyPrice: 
+  Price: {fileID: 0}
+  MyName: 
+  MyObject: {fileID: 0}
+  MySprite: {fileID: 0}
 --- !u!1 &1423567762
 GameObject:
   m_ObjectHideFlags: 0
@@ -26406,9 +26120,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e424db802ebc84ab96600be963f871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  etiketas: {fileID: 0}
+  myTag: {fileID: 0}
   nombre: Lentejas
   Imag: {fileID: 0}
+  MyTag: 
 --- !u!65 &1462579725
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27253,9 +26968,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e424db802ebc84ab96600be963f871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  etiketas: {fileID: 1744603545}
+  myTag: {fileID: 0}
   nombre: Lentejas
   Imag: {fileID: 21300000, guid: 9ec33042faf13c34eaa5f155520713d2, type: 3}
+  MyTag: 
 --- !u!65 &1503891212
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28452,9 +28168,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e424db802ebc84ab96600be963f871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  etiketas: {fileID: 0}
+  myTag: {fileID: 0}
   nombre: Lentejas
   Imag: {fileID: 0}
+  MyTag: 
 --- !u!65 &1605656556
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28903,9 +28620,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e424db802ebc84ab96600be963f871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  etiketas: {fileID: 2038933798}
+  myTag: {fileID: 0}
   nombre: Lentejas
   Imag: {fileID: 21300000, guid: 9ec33042faf13c34eaa5f155520713d2, type: 3}
+  MyTag: 
 --- !u!65 &1629772226
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -28941,31 +28659,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0100000002000000030000000400000005000000
-  valor: 0
-  colores:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.24705882, b: 1, a: 1}
-  texto: {fileID: 1489927751}
-  coler: {r: 0, g: 0, b: 0, a: 1}
-  nomcolor: 
-  cubo: {fileID: 1644686091}
-  mesh:
-  - {fileID: -5495902117074765545, guid: 7d792b68251a6ed4094134d5c3953b6d, type: 3}
-  - {fileID: 2534964839176971238, guid: ea6b4d501ee25d34583bb4e69fe7dd87, type: 3}
-  - {fileID: -7387706064836869012, guid: b80555c8c6af54945854d08953cd132b, type: 3}
-  - {fileID: -5495902117074765545, guid: c03acd0b16f174e4e97314eca6d16da5, type: 3}
-  manag: {fileID: 848077136}
-  Product: {fileID: 0}
-  jeison: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
-  eti: 0
-  nomEtiqueta: 
-  ArrayEtiquetas:
-  - cuadrada
-  - estrella
-  - redonda
-  - triangular
-  A: 0
+  MyTag: 
+  MyColor: 
+  MyPrice: 
+  Price: {fileID: 0}
+  MyName: 
+  MyObject: {fileID: 0}
+  MySprite: {fileID: 0}
 --- !u!1001 &1645129860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29061,9 +28761,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e424db802ebc84ab96600be963f871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  etiketas: {fileID: 0}
+  myTag: {fileID: 0}
   nombre: Lentejas
   Imag: {fileID: 0}
+  MyTag: 
 --- !u!65 &1645129864
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -29099,31 +28800,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0100000002000000030000000400000005000000
-  valor: 0
-  colores:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.24705882, b: 1, a: 1}
-  texto: {fileID: 790692353}
-  coler: {r: 0, g: 0, b: 0, a: 1}
-  nomcolor: 
-  cubo: {fileID: 1646009578}
-  mesh:
-  - {fileID: -5495902117074765545, guid: 7d792b68251a6ed4094134d5c3953b6d, type: 3}
-  - {fileID: 2534964839176971238, guid: ea6b4d501ee25d34583bb4e69fe7dd87, type: 3}
-  - {fileID: -7387706064836869012, guid: b80555c8c6af54945854d08953cd132b, type: 3}
-  - {fileID: -5495902117074765545, guid: c03acd0b16f174e4e97314eca6d16da5, type: 3}
-  manag: {fileID: 848077136}
-  Product: {fileID: 0}
-  jeison: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
-  eti: 0
-  nomEtiqueta: 
-  ArrayEtiquetas:
-  - cuadrada
-  - estrella
-  - redonda
-  - triangular
-  A: 0
+  MyTag: 
+  MyColor: 
+  MyPrice: 
+  Price: {fileID: 0}
+  MyName: 
+  MyObject: {fileID: 0}
+  MySprite: {fileID: 0}
 --- !u!1001 &1646488796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29554,31 +29237,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0100000002000000030000000400000005000000
-  valor: 0
-  colores:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.24705882, b: 1, a: 1}
-  texto: {fileID: 318546399}
-  coler: {r: 0, g: 0, b: 0, a: 1}
-  nomcolor: 
-  cubo: {fileID: 1663642074}
-  mesh:
-  - {fileID: -5495902117074765545, guid: 7d792b68251a6ed4094134d5c3953b6d, type: 3}
-  - {fileID: 2534964839176971238, guid: ea6b4d501ee25d34583bb4e69fe7dd87, type: 3}
-  - {fileID: -7387706064836869012, guid: b80555c8c6af54945854d08953cd132b, type: 3}
-  - {fileID: -5495902117074765545, guid: c03acd0b16f174e4e97314eca6d16da5, type: 3}
-  manag: {fileID: 848077136}
-  Product: {fileID: 0}
-  jeison: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
-  eti: 0
-  nomEtiqueta: 
-  ArrayEtiquetas:
-  - cuadrada
-  - estrella
-  - redonda
-  - triangular
-  A: 0
+  MyTag: 
+  MyColor: 
+  MyPrice: 
+  Price: {fileID: 0}
+  MyName: 
+  MyObject: {fileID: 0}
+  MySprite: {fileID: 0}
 --- !u!1001 &1664947133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29674,9 +29339,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e424db802ebc84ab96600be963f871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  etiketas: {fileID: 0}
+  myTag: {fileID: 0}
   nombre: Lentejas
   Imag: {fileID: 0}
+  MyTag: 
 --- !u!65 &1664947137
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30554,9 +30220,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 11e424db802ebc84ab96600be963f871, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  etiketas: {fileID: 2038933798}
+  myTag: {fileID: 0}
   nombre: Lentejas
   Imag: {fileID: 21300000, guid: 9ec33042faf13c34eaa5f155520713d2, type: 3}
+  MyTag: 
 --- !u!65 &1723790905
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -30765,31 +30432,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0100000002000000030000000400000005000000
-  valor: 0
-  colores:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.24705882, b: 1, a: 1}
-  texto: {fileID: 1067740444}
-  coler: {r: 0, g: 0, b: 0, a: 1}
-  nomcolor: 
-  cubo: {fileID: 1744603543}
-  mesh:
-  - {fileID: -5495902117074765545, guid: 7d792b68251a6ed4094134d5c3953b6d, type: 3}
-  - {fileID: 2534964839176971238, guid: ea6b4d501ee25d34583bb4e69fe7dd87, type: 3}
-  - {fileID: -7387706064836869012, guid: b80555c8c6af54945854d08953cd132b, type: 3}
-  - {fileID: -5495902117074765545, guid: c03acd0b16f174e4e97314eca6d16da5, type: 3}
-  manag: {fileID: 848077136}
-  Product: {fileID: 0}
-  jeison: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
-  eti: 0
-  nomEtiqueta: 
-  ArrayEtiquetas:
-  - cuadrada
-  - estrella
-  - redonda
-  - triangular
-  A: 0
+  MyTag: 
+  MyColor: 
+  MyPrice: 
+  Price: {fileID: 0}
+  MyName: 
+  MyObject: {fileID: 0}
+  MySprite: {fileID: 0}
 --- !u!1001 &1745008859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30876,31 +30525,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0100000002000000030000000400000005000000
-  valor: 0
-  colores:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.24705882, b: 1, a: 1}
-  texto: {fileID: 1903293261}
-  coler: {r: 0, g: 0, b: 0, a: 1}
-  nomcolor: 
-  cubo: {fileID: 1745008860}
-  mesh:
-  - {fileID: -5495902117074765545, guid: 7d792b68251a6ed4094134d5c3953b6d, type: 3}
-  - {fileID: 2534964839176971238, guid: ea6b4d501ee25d34583bb4e69fe7dd87, type: 3}
-  - {fileID: -7387706064836869012, guid: b80555c8c6af54945854d08953cd132b, type: 3}
-  - {fileID: -5495902117074765545, guid: c03acd0b16f174e4e97314eca6d16da5, type: 3}
-  manag: {fileID: 848077136}
-  Product: {fileID: 0}
-  jeison: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
-  eti: 0
-  nomEtiqueta: 
-  ArrayEtiquetas:
-  - cuadrada
-  - estrella
-  - redonda
-  - triangular
-  A: 0
+  MyTag: 
+  MyColor: 
+  MyPrice: 
+  Price: {fileID: 0}
+  MyName: 
+  MyObject: {fileID: 0}
+  MySprite: {fileID: 0}
 --- !u!4 &1745008862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7d792b68251a6ed4094134d5c3953b6d, type: 3}
@@ -33248,7 +32879,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nomEscena: 7
-  cul: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
 --- !u!4 &1916969751
 Transform:
   m_ObjectHideFlags: 0
@@ -34249,31 +33879,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0100000002000000030000000400000005000000
-  valor: 0
-  colores:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.24705882, b: 1, a: 1}
-  texto: {fileID: 700507449}
-  coler: {r: 0, g: 0, b: 0, a: 1}
-  nomcolor: 
-  cubo: {fileID: 1996279856}
-  mesh:
-  - {fileID: -5495902117074765545, guid: 7d792b68251a6ed4094134d5c3953b6d, type: 3}
-  - {fileID: 2534964839176971238, guid: ea6b4d501ee25d34583bb4e69fe7dd87, type: 3}
-  - {fileID: -7387706064836869012, guid: b80555c8c6af54945854d08953cd132b, type: 3}
-  - {fileID: -5495902117074765545, guid: c03acd0b16f174e4e97314eca6d16da5, type: 3}
-  manag: {fileID: 848077136}
-  Product: {fileID: 0}
-  jeison: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
-  eti: 0
-  nomEtiqueta: 
-  ArrayEtiquetas:
-  - cuadrada
-  - estrella
-  - redonda
-  - triangular
-  A: 0
+  MyTag: 
+  MyColor: 
+  MyPrice: 
+  Price: {fileID: 0}
+  MyName: 
+  MyObject: {fileID: 0}
+  MySprite: {fileID: 0}
 --- !u!1 &1996775738
 GameObject:
   m_ObjectHideFlags: 0
@@ -34566,31 +34178,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0100000002000000030000000400000005000000
-  valor: 0
-  colores:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.24705882, b: 1, a: 1}
-  texto: {fileID: 909299775}
-  coler: {r: 0, g: 0, b: 0, a: 1}
-  nomcolor: 
-  cubo: {fileID: 2004788306}
-  mesh:
-  - {fileID: -5495902117074765545, guid: 7d792b68251a6ed4094134d5c3953b6d, type: 3}
-  - {fileID: 2534964839176971238, guid: ea6b4d501ee25d34583bb4e69fe7dd87, type: 3}
-  - {fileID: -7387706064836869012, guid: b80555c8c6af54945854d08953cd132b, type: 3}
-  - {fileID: -5495902117074765545, guid: c03acd0b16f174e4e97314eca6d16da5, type: 3}
-  manag: {fileID: 848077136}
-  Product: {fileID: 0}
-  jeison: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
-  eti: 0
-  nomEtiqueta: 
-  ArrayEtiquetas:
-  - cuadrada
-  - estrella
-  - redonda
-  - triangular
-  A: 0
+  MyTag: 
+  MyColor: 
+  MyPrice: 
+  Price: {fileID: 0}
+  MyName: 
+  MyObject: {fileID: 0}
+  MySprite: {fileID: 0}
 --- !u!1 &2013073515
 GameObject:
   m_ObjectHideFlags: 0
@@ -35097,31 +34691,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: 0100000002000000030000000400000005000000
-  valor: 0
-  colores:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.24705882, b: 1, a: 1}
-  texto: {fileID: 695061326}
-  coler: {r: 0, g: 0, b: 0, a: 1}
-  nomcolor: 
-  cubo: {fileID: 2038933796}
-  mesh:
-  - {fileID: -5495902117074765545, guid: 7d792b68251a6ed4094134d5c3953b6d, type: 3}
-  - {fileID: 2534964839176971238, guid: ea6b4d501ee25d34583bb4e69fe7dd87, type: 3}
-  - {fileID: -7387706064836869012, guid: b80555c8c6af54945854d08953cd132b, type: 3}
-  - {fileID: -5495902117074765545, guid: c03acd0b16f174e4e97314eca6d16da5, type: 3}
-  manag: {fileID: 848077136}
-  Product: {fileID: 0}
-  jeison: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
-  eti: 0
-  nomEtiqueta: 
-  ArrayEtiquetas:
-  - cuadrada
-  - estrella
-  - redonda
-  - triangular
-  A: 0
+  MyTag: 
+  MyColor: 
+  MyPrice: 
+  Price: {fileID: 0}
+  MyName: 
+  MyObject: {fileID: 0}
+  MySprite: {fileID: 0}
 --- !u!1001 &2044771413
 PrefabInstance:
   m_ObjectHideFlags: 0

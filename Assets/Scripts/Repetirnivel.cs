@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class Repetirnivel : MonoBehaviour
 {
     public GameObject[] objetosjuego;
-    public Managernivel nivel;
+    public GameManager nivel;
     public int puntosbuenos, puntosmalos;
     public GameObject PanelNext;
     public GameObject PanelBack;

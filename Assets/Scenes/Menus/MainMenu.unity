@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311918, g: 0.3807398, b: 0.35872716, a: 1}
+  m_IndirectSpecularColor: {r: 0.3708984, g: 0.37837017, b: 0.35722524, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2424,7 +2424,6 @@ MonoBehaviour:
   lag: []
   nom: {fileID: 285359846}
   next: {fileID: 0}
-  jey: {fileID: 11400000, guid: 9e7cfcab58a631c49abef35d90ba72b7, type: 2}
   drop: {fileID: 0}
 --- !u!4 &754118249
 Transform:
@@ -4358,7 +4357,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 648056007}
+      - m_Target: {fileID: 1372698018}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6

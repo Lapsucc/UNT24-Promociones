@@ -4,12 +4,16 @@ using UnityEngine;
 
 public class Movimiento : MonoBehaviour
 {
+    [SerializeField] private Colision col;
     bool isleft = false;
     bool isright = false;
 
     public Rigidbody rb;
-    public float speedForce; 
-
+    public float speedForce;
+    private void Start()
+    {
+        TryGetComponent(out col);
+    }
     public void clickleft()
     {
         isleft = true;
@@ -25,16 +29,22 @@ public class Movimiento : MonoBehaviour
     public void releaseright()
     {
         isright = false;
-    } 
+    }
 
     private void LateUpdate()
     {
-        if (Input.GetButtonDown("Horizontal")) rb.AddForce(new Vector3(0, 0, speedForce * Time.deltaTime));
+        if (!col.Checkd)
+        {
+            if (Input.GetButtonDown("Horizontal")) rb.AddForce(new Vector3(0, 0, speedForce * Time.deltaTime));
+        }
     }
 
     private void FixedUpdate()
     {
-        if (isright) rb.AddForce(new Vector3(0, 0, speedForce) * Time.deltaTime);
-        else if (isleft) rb.AddForce(new Vector3(0, 0, -speedForce) * Time.deltaTime);
+        if (!col.Checkd)
+        {
+            if (isright) rb.AddForce(new Vector3(0, 0, speedForce) * Time.deltaTime);
+            else if (isleft) rb.AddForce(new Vector3(0, 0, -speedForce) * Time.deltaTime);
+        }
     }
 }
