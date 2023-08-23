@@ -4805,13 +4805,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyName: 
+  MySprite: {fileID: 0}
   MyTag: 
   MyColor: 
   MyPrice: 
   Price: {fileID: 0}
-  MyName: 
   MyObject: {fileID: 0}
-  MySprite: {fileID: 0}
+  Checkd: 0
 --- !u!1001 &307600039
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7082,13 +7083,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyName: 
+  MySprite: {fileID: 0}
   MyTag: 
   MyColor: 
   MyPrice: 
   Price: {fileID: 0}
-  MyName: 
   MyObject: {fileID: 0}
-  MySprite: {fileID: 0}
+  Checkd: 0
 --- !u!1001 &396379266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8228,13 +8230,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyName: 
+  MySprite: {fileID: 0}
   MyTag: 
   MyColor: 
   MyPrice: 
   Price: {fileID: 0}
-  MyName: 
   MyObject: {fileID: 0}
-  MySprite: {fileID: 0}
+  Checkd: 0
 --- !u!1001 &496174132
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15570,13 +15573,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyName: 
+  MySprite: {fileID: 0}
   MyTag: 
   MyColor: 
   MyPrice: 
   Price: {fileID: 0}
-  MyName: 
   MyObject: {fileID: 0}
-  MySprite: {fileID: 0}
+  Checkd: 0
 --- !u!1 &839080095 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7348248430999934345, guid: 928b3d02a807d324798d168ffc4f84b4, type: 3}
@@ -15613,13 +15617,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d3a0a15a01adee4fad1476a174e2e82, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startPanel: {fileID: 0}
+  mainTag: {fileID: 0}
+  instruction: {fileID: 0}
+  mainPrice: {fileID: 0}
   etiquetas:
   - {fileID: 21300000, guid: 5e6fed9e98478eb4198eb7f4abf6f0c0, type: 3}
   - {fileID: 21300000, guid: 1e8552f2714146e4f94f912e980788a5, type: 3}
   - {fileID: 21300000, guid: 7acf1a66a9d3853418b1a7d4fda49690, type: 3}
   - {fileID: 21300000, guid: 8d045b3343155674ba28e17e80306cfa, type: 3}
-  playerTag: {fileID: 0}
-  playerPrice: {fileID: 0}
   tags: []
   tagMesh: []
   prices: []
@@ -15627,7 +15633,12 @@ MonoBehaviour:
   right: {fileID: 0}
   wrong: {fileID: 0}
   endPanel: {fileID: 0}
+  prefabProd: {fileID: 0}
+  prodParent: {fileID: 0}
+  checkers: []
   tagList: []
+  positions: []
+  prodsPerLevel: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
 --- !u!4 &848077137
 Transform:
   m_ObjectHideFlags: 0
@@ -17227,13 +17238,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyName: 
+  MySprite: {fileID: 0}
   MyTag: 
   MyColor: 
   MyPrice: 
   Price: {fileID: 0}
-  MyName: 
   MyObject: {fileID: 0}
-  MySprite: {fileID: 0}
+  Checkd: 0
 --- !u!1 &916383108
 GameObject:
   m_ObjectHideFlags: 0
@@ -17536,13 +17548,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyName: 
+  MySprite: {fileID: 0}
   MyTag: 
   MyColor: 
   MyPrice: 
   Price: {fileID: 0}
-  MyName: 
   MyObject: {fileID: 0}
-  MySprite: {fileID: 0}
+  Checkd: 0
 --- !u!1 &958967689 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8975286123110852453, guid: 79e9e6e7790031d4faaaf310b96f9655, type: 3}
@@ -20279,13 +20292,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyName: 
+  MySprite: {fileID: 0}
   MyTag: 
   MyColor: 
   MyPrice: 
   Price: {fileID: 0}
-  MyName: 
   MyObject: {fileID: 0}
-  MySprite: {fileID: 0}
+  Checkd: 0
 --- !u!1 &1064596182 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7067708180282032473, guid: edb9d7d98f0feea4eb6aa43d666c7f03, type: 3}
@@ -20653,13 +20667,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyName: 
+  MySprite: {fileID: 0}
   MyTag: 
   MyColor: 
   MyPrice: 
   Price: {fileID: 0}
-  MyName: 
   MyObject: {fileID: 0}
-  MySprite: {fileID: 0}
+  Checkd: 0
 --- !u!1 &1072434567
 GameObject:
   m_ObjectHideFlags: 0
@@ -23349,13 +23364,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyName: 
+  MySprite: {fileID: 0}
   MyTag: 
   MyColor: 
   MyPrice: 
   Price: {fileID: 0}
-  MyName: 
   MyObject: {fileID: 0}
-  MySprite: {fileID: 0}
+  Checkd: 0
 --- !u!1001 &1264574080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25478,13 +25494,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyName: 
+  MySprite: {fileID: 0}
   MyTag: 
   MyColor: 
   MyPrice: 
   Price: {fileID: 0}
-  MyName: 
   MyObject: {fileID: 0}
-  MySprite: {fileID: 0}
+  Checkd: 0
 --- !u!1 &1423567762
 GameObject:
   m_ObjectHideFlags: 0
@@ -28659,13 +28676,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyName: 
+  MySprite: {fileID: 0}
   MyTag: 
   MyColor: 
   MyPrice: 
   Price: {fileID: 0}
-  MyName: 
   MyObject: {fileID: 0}
-  MySprite: {fileID: 0}
+  Checkd: 0
 --- !u!1001 &1645129860
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28800,13 +28818,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyName: 
+  MySprite: {fileID: 0}
   MyTag: 
   MyColor: 
   MyPrice: 
   Price: {fileID: 0}
-  MyName: 
   MyObject: {fileID: 0}
-  MySprite: {fileID: 0}
+  Checkd: 0
 --- !u!1001 &1646488796
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29237,13 +29256,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyName: 
+  MySprite: {fileID: 0}
   MyTag: 
   MyColor: 
   MyPrice: 
   Price: {fileID: 0}
-  MyName: 
   MyObject: {fileID: 0}
-  MySprite: {fileID: 0}
+  Checkd: 0
 --- !u!1001 &1664947133
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30432,13 +30452,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyName: 
+  MySprite: {fileID: 0}
   MyTag: 
   MyColor: 
   MyPrice: 
   Price: {fileID: 0}
-  MyName: 
   MyObject: {fileID: 0}
-  MySprite: {fileID: 0}
+  Checkd: 0
 --- !u!1001 &1745008859
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30525,13 +30546,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyName: 
+  MySprite: {fileID: 0}
   MyTag: 
   MyColor: 
   MyPrice: 
   Price: {fileID: 0}
-  MyName: 
   MyObject: {fileID: 0}
-  MySprite: {fileID: 0}
+  Checkd: 0
 --- !u!4 &1745008862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7d792b68251a6ed4094134d5c3953b6d, type: 3}
@@ -33879,13 +33901,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyName: 
+  MySprite: {fileID: 0}
   MyTag: 
   MyColor: 
   MyPrice: 
   Price: {fileID: 0}
-  MyName: 
   MyObject: {fileID: 0}
-  MySprite: {fileID: 0}
+  Checkd: 0
 --- !u!1 &1996775738
 GameObject:
   m_ObjectHideFlags: 0
@@ -34178,13 +34201,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyName: 
+  MySprite: {fileID: 0}
   MyTag: 
   MyColor: 
   MyPrice: 
   Price: {fileID: 0}
-  MyName: 
   MyObject: {fileID: 0}
-  MySprite: {fileID: 0}
+  Checkd: 0
 --- !u!1 &2013073515
 GameObject:
   m_ObjectHideFlags: 0
@@ -34691,13 +34715,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MyName: 
+  MySprite: {fileID: 0}
   MyTag: 
   MyColor: 
   MyPrice: 
   Price: {fileID: 0}
-  MyName: 
   MyObject: {fileID: 0}
-  MySprite: {fileID: 0}
+  Checkd: 0
 --- !u!1001 &2044771413
 PrefabInstance:
   m_ObjectHideFlags: 0

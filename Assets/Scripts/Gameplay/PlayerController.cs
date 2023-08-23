@@ -1,13 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController Instance { get; private set; }
     [HideInInspector] private RaycastHit hit;
     [HideInInspector] private Ray ray;
     [HideInInspector] private Camera cam;
     [HideInInspector] private Rigidbody rb;
+
+    [Header("Player Tag")]
+    [SerializeField] private MeshFilter fltr;
+    [SerializeField] private MeshRenderer rend;
+    [SerializeField] private TMP_Text price;
+
     [Header("Movement")]
     [Range(0, 20)][SerializeField] private float speedForce;
     [HideInInspector] private bool Forward = false, Backwards = false;
@@ -21,6 +29,12 @@ public class PlayerController : MonoBehaviour
     [Header("Products")]
     private List<bool> sItems = new();
     private List<Tags> sTags = new();
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this) Destroy(this);
+        else Instance = this;
+    }
 
     private void Start()
     {
@@ -95,5 +109,12 @@ public class PlayerController : MonoBehaviour
     {
         Backwards = val;
         if (val) Forward = !val;
+    }
+    public void SetMeshTag(Mesh mesh, Color col, string pce)
+    {
+        fltr.mesh = mesh;
+        rend.material.color = col;
+        price.text = pce;
+        rend.material.SetColor("_EmissionColor", col);
     }
 }

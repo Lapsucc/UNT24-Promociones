@@ -29,6 +29,7 @@ RectTransform:
   m_LocalRotation: {x: -0.008080454, y: -0.70706064, z: -0.70706064, w: -0.008080454}
   m_LocalPosition: {x: 0, y: 0, z: -0.15}
   m_LocalScale: {x: 0.026342837, y: 0.045965362, z: 0.05232228}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2509196626375798825}
   m_Father: {fileID: 1589613465942693025}
@@ -127,6 +128,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -33.231354, y: 23.95, z: -16.803}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1589613465942693025}
   m_Father: {fileID: 0}
@@ -144,15 +146,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df846cc82f274424b99cd469454ef77c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  precio: e8030000d0070000b80b0000
-  valor: 0
-  colores:
-  - {r: 1, g: 0, b: 0, a: 1}
-  - {r: 0, g: 0.23288822, b: 1, a: 1}
-  texto: {fileID: 3437758661378559790}
-  coler: {r: 0, g: 0, b: 0, a: 1}
-  nomcolor: 
-  cubo: {fileID: 1589613465942693024}
+  MyName: 
+  MySprite: {fileID: 0}
+  MyTag: 
+  MyColor: 
+  MyPrice: 
+  Price: {fileID: 0}
+  MyObject: {fileID: 0}
+  Checkd: 0
 --- !u!1 &1589613465942693024
 GameObject:
   m_ObjectHideFlags: 0
@@ -181,6 +182,7 @@ Transform:
   m_LocalRotation: {x: -0.5, y: 0.5, z: 0.5, w: 0.5}
   m_LocalPosition: {x: 28.8, y: -1.1955, z: 15.992}
   m_LocalScale: {x: 2.3085005, y: 0.5610765, z: 0.5558642}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1589613464291613047}
   m_Father: {fileID: 1589613464881663561}
@@ -205,6 +207,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -263,6 +266,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -0.03}
   m_LocalScale: {x: 0.21761, y: 0.21761, z: 0.21761}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1589613464291613047}
   m_RootOrder: 0
